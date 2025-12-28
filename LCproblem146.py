@@ -12,4 +12,4 @@ while left < right: # left pointer represents the smaller numbers towards the le
         left+=1
     else:
         right-=1# if sum > target we move right pointer towards left handside.
-    
+    # edit - Thought process behind this question , questions says to find two sum in an array (my thought process" oh so its a window problem ") also given that the array is sorted (" immediately since its sorted+2sum its gotta be 2pointer araay problem").
