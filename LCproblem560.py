@@ -7,3 +7,13 @@ for num in nums:
         count+=hashmap[currn_sum-k]
     hashmap[currn_sum]=hashmap.get(currn_sum,0)+1
 return count
+## reinforcement question with same logic for practice to list output for number of subarrays with k=0
+hashmap={0:1}
+count=0
+curr_sum=0
+for num in nums:
+    curr_sum+=num
+    if curr_sum in hashmap:# because k=0 we can just directly write curr_sum
+        count+=hashmap[curr_sum]
+    hashmap[curr_sum] = hashmap.get(curr_sum,0)+1 #similar logic applied just that curr_sum-k becomes curr_sum
+return count
