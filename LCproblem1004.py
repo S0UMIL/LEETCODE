@@ -11,4 +11,5 @@ for right in range(len(nums)):
     left+=1
   max_len=max(max_len,right-left+1)
 return max_len
-#this problem doesnt require any set or hashmap that was one part which kept me confused so new learning .
+#this problem doesnt require any set or hashmap that was one part which kept me confused so new learning, we can solve this problem without them.
+
