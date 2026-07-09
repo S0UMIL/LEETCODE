@@ -10,7 +10,7 @@ class Solution:
         for num,count in freq.items():
             buckets[count].append(num)
         res=[]
-        for num, count in range(len(buckets)-1,0,-1):# going from high freq to low freq since we require highest freq either ways
+        for count in range(len(buckets)-1,0,-1):# going from high freq to low freq since we require highest freq either ways
             for num in bucket[count]:#adding numbers into the res list until we have k
                 res.append(num)
                 if len(res)==k:
